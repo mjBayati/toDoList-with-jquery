@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="jumbotron w-100" id="root">
+      <article class="w-100 container d-flex flex-column align-items-center justify-content-center">
+          
+          <header class="row" id="headerPart">
+            <div class="d-flex justify-content-center align-items-center w-100">
+                <h6 id="descriptionHeader">tasks list</h6>
+            </div>
+          </header>
+          
+          
+          <div class="row w-100 d-flex justify-content-center flex-column align-items-center">
+            <div class="col-md-8 col-xs-10 d-flex justify-content-center flex-column align-items-center"  id="todoListsPart">
+    
+              
+              
+              <button id="addListButton" type="button" class="btn" name="button">
+                  <i class="fas fa-plus"></i>
+              </button>
+              <h6 id="addNewListButtonTitle">add new list</h6>  
+
+                
+                
+              <div class="beShownOrNot d-flex flex-column align-items-center justify-content-center" id="addnewListFeild">
+                  <input type="text" id="addnewListFeildInput" name="" value="">
+                  <button id="addnewListFeildButton" class="btn btn-success" type="button" name="button"><span>add</span></button>
+              </div>
+
+
+              <div class="row w-100 listCarousel d-flex flex-column align-items-center" id="listWrapper">
+                    <div class="d-flex justify-content-center align-items-center" id="listTile">
+                        <h6>testList</h6>
+                    </div>
+                    <div class="col-12 d-flex flex-column align-items-center" id="tasksWrapper">
+                          <div class="row w-100 d-flex flex-column align-items-center" id="tasksList">
+                            
+                            <div class="d-flex flex-row flex-wrap align-items-center justify-content-between" id="taskDetails">
+                                  <div class="d-flex flex-row-reverse justify-content-center align-items-center" id="nameAndTimeWrapper">
+                                      <time id="deadLineTime">10.00</time>
+                                      <h6 id="taskTitle">taskTitle</h6>
+                                      <div id="checkBoxContainer" class="checkbox-container circular-container">
+                                          <label class="checkbox-label">
+                                              <input type="checkbox" id="taskDetailsCheckBox">
+                                              <span class="checkbox-custom circular"></span>
+                                          </label>
+                                      </div>
+                                  </div>
+                                  <div class="d-flex flex-row align-items-center justify-content-center">
+                                    <i id="editTaskText" class="fas fa-edit"></i>
+                                    <i id="taskDelteIcon" class="fas fa-trash"></i>     
+                                  </div>
+                                  <div class="beShownOrNot d-flex flex-column align-items-center justify-content-center" id="editCurrentItemField">
+                                      <input type="text" id="editedName" name="" placeholder="task name">
+                                      <input type="date" id="editedDate" value="">
+                                      <button id="editTaskButton" class="btn btn-success" type="button" name="button">edit</button>
+                                  </div>
+                            </div>
+                          </div>
+                          
+                          
+                          <div class="beShownOrNot d-flex flex-column align-items-center justify-content-center" id="addToListField">
+                              <input type="text" id="addToListFieldId" name="" placeholder="task name">
+                              <input type="date" id="dateFieldForTask" value="">
+                              <button id="addToListFieldButton" class="btn btn-success" type="button" name="button">add</button>
+                          </div>
+
+
+                          <div class="d-flex flex-row justify-content-between" id="listHandlingFooter">
+                              <button type="button" name="button"
+                                class="btn btn-danger d-flex justify-content-center align-items-center"
+                               id="addToListButton">
+                                <i class="fas fa-plus"></i>
+                               </button>
+                          </div>
+                    </div>
+              </div>
+              
+            </div>
+          </div>
+      </article>
+    </div>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jqueryfile.js"></script>
+  <script type="text/javascript" src="js/eventsHandeler.js"></script>
+  </body>
+</html>
